@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.append(os.getcwd())
+#ys.path.append(os.getcwd())
 
 from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.model_training_02 import Training

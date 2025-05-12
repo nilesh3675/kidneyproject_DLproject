@@ -8,7 +8,7 @@ from src.cnnClassifier.pipeline.prepare_base_model import PrepareBaseModelTraini
 from src.cnnClassifier.entity.config import PrepareBaseModelConfig
 from src.cnnClassifier.components.prepare_base_model_02 import PrepareBaseModel
 from src.cnnClassifier.pipeline.model_training import ModelTrainingPipeline
-
+from src.cnnClassifier.pipeline.model_eval import EvaluationPipeline
 STAGE_NAME = "Data Ingestion stage"
 try:
    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
@@ -18,6 +18,7 @@ try:
 except Exception as e:
    logger.exception(e)
    raise e
+   
 
 STAGE_NAME = "Prepare base model"
 try: 
@@ -37,6 +38,18 @@ try:
    model_trainer = ModelTrainingPipeline()
    model_trainer.main()
    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
+STAGE_NAME = "Evaluation stage"
+try:
+   logger.info(f"*******************")
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   model_evalution = EvaluationPipeline()
+   model_evalution.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+
 except Exception as e:
         logger.exception(e)
         raise e
