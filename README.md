@@ -25,6 +25,7 @@ git clone https://github.com/nilesh3675/kidneyproject_DLproject.git
 ## step-4 requirements
 
 pip install -r requirements.txt
+#mlfow==2.11.0 remove at the time of aws deployment
 
 #   AWS-CICD-Deployment-with-Github-Actions
 # 
@@ -59,7 +60,7 @@ pip install -r requirements.txt
 
     
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI:170533023526.dkr.ecr.ap-south-1.amazonaws.com/kidneyrep
+    - Save the URL: 390402538051.dkr.ecr.ap-south-1.amazonaws.com/kidneyrepo
 
     
 ## 4. Create EC2 machine (Ubuntu) 
@@ -90,11 +91,15 @@ pip install -r requirements.txt
 
 # 7. Setup github secrets:
 
-    AWS_ACCESS_KEY_ID=
+   AWS_ACCESS_KEY_ID=
 
     AWS_SECRET_ACCESS_KEY=
 
     AWS_REGION = us-east-1
 
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+
+    ECR_REPOSITORY_NAME = simple-app
+
+
 

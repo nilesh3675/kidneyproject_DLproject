@@ -173,3 +173,14 @@ x==========x]
 [2025-05-13 17:52:38,943: INFO: _internal:  * Restarting with stat]
 [2025-05-13 17:52:48,734: WARNING: _internal:  * Debugger is active!]
 [2025-05-13 17:52:48,734: INFO: _internal:  * Debugger PIN: 374-238-866]
+[2025-05-14 16:50:37,005: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8085
+ * Running on http://192.168.249.124:8085]
+[2025-05-14 16:50:37,123: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-14 16:50:37,124: INFO: _internal:  * Restarting with stat]
+[2025-05-14 16:50:44,007: WARNING: _internal:  * Debugger is active!]
+[2025-05-14 16:50:44,017: INFO: _internal:  * Debugger PIN: 374-238-866]
+[2025-05-14 16:52:53,842: INFO: _internal: 127.0.0.1 - - [14/May/2025 16:52:53] "GET / HTTP/1.1" 200 -]
+[2025-05-14 16:55:45,233: INFO: _internal: 127.0.0.1 - - [14/May/2025 16:55:45] "GET / HTTP/1.1" 200 -]
+[2025-05-14 16:59:27,353: INFO: _internal: 127.0.0.1 - - [14/May/2025 16:59:27] "GET / HTTP/1.1" 200 -]
